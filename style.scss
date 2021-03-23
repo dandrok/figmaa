@@ -1,0 +1,254 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+img,
+ol,
+ul,
+li,
+input,
+label,
+select,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+footer,
+header,
+menu,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  list-style: none;
+  border: 0;
+  font-family: "Kanit", sans-serif;
+}
+
+$colorBlack: #000;
+$colorWhite: #fff;
+$colorYellow: #ffc700;
+$colorPurple: #c7b9ff;
+$colorGreen: #0fa958;
+
+$main-tittle: 110px;
+$h1: 64px;
+$h2: 36px;
+$h3: 22px;
+$p1: 22px;
+$buttons2: 18px;
+
+$border-radius: 8px !default;
+
+a {
+  text-decoration: none;
+  color: $colorBlack;
+}
+
+//BUTTONS-BLACK-BG-WHITE-FONT
+.btn-one {
+  border-radius: $border-radius;
+  color: $colorWhite;
+  padding: 14px 24px 16px;
+  font-weight: 600;
+  font-size: $buttons2;
+  background-color: $colorBlack;
+  border: none;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.btn-one:hover {
+  transform: translateY(-2px);
+}
+
+// NAVBAR
+#nav-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem 3rem;
+  align-items: center;
+  .left {
+    width: 37px;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    div {
+      button {
+        border: none;
+        background-color: $colorWhite;
+        a {
+          padding: 8px 16px;
+          font-size: $buttons2;
+          font-weight: 300;
+
+          span {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+    .sing-up {
+      border-radius: $border-radius;
+      color: $colorWhite;
+      padding: 14px 24px 16px;
+      font-weight: 600;
+      font-size: $buttons2;
+      background-color: $colorBlack;
+      border: none;
+      transition: all 0.2s;
+    }
+    .sing-up:hover {
+      transform: translateY(-2px);
+    }
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: $colorWhite;
+      min-width: 190px;
+      border: solid 3px $colorBlack;
+      z-index: 1;
+      left: -22px;
+      padding: 16px;
+      a {
+        color: $colorBlack;
+        padding: 8px;
+        text-decoration: none;
+        display: block;
+        font-size: $buttons2;
+        font-weight: 300;
+      }
+      a:hover {
+        opacity: 0.5;
+      }
+    }
+    .dropdown-content a:hover {
+      opacity: 0.5;
+    }
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+}
+
+//HERO
+#hero {
+  padding: 130px 32px;
+
+  .main-t {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+      font-size: $main-tittle;
+      font-weight: 500;
+      text-align: center;
+      width: 800px;
+      line-height: 1;
+    }
+  }
+  .p-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    p {
+      font-size: $p1;
+      font-weight: 300;
+      max-width: 500px;
+      text-align: center;
+    }
+  }
+  .buttons-hero {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .btn-watch {
+      display: flex;
+      align-items: center;
+
+      button {
+        color: $colorBlack;
+        padding: 14px 24px 16px;
+        font-weight: 600;
+        font-size: $p1;
+        background-color: $colorWhite;
+        border: none;
+        transition: all 0.2s;
+        cursor: pointer;
+      }
+      img {
+        width: 18px;
+        height: 18;
+        position: relative;
+        left: 18px;
+      }
+    }
+  }
+}
+
+// MAIN
+#main-one {
+  .img-under-hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    img {
+      position: relative;
+      max-width: 1204px;
+      margin: 0 auto;
+      padding: 32px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .icons-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 77px);
+    max-width: 1200px;
+    margin: 0 auto 32px;
+    justify-content: space-evenly;
+    img {
+      width: 48px;
+      height: auto;
+    }
+  }
+}
+
+// FOOTER
+
+#footer-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 48px;
+  grid-row-gap: 0px;
+}

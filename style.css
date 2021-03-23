@@ -1,0 +1,302 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+img,
+ol,
+ul,
+li,
+input,
+label,
+select,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+footer,
+header,
+menu,
+nav,
+section,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  list-style: none;
+  border: 0;
+  font-family: "Kanit", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn-one {
+  border-radius: 8px;
+  color: #fff;
+  padding: 14px 24px 16px;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: #000;
+  border: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn-one:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+#nav-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.2rem 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#nav-flex .left {
+  width: 37px;
+}
+
+#nav-flex .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#nav-flex .right div button {
+  border: none;
+  background-color: #fff;
+}
+
+#nav-flex .right div button a {
+  padding: 8px 16px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#nav-flex .right div button a span {
+  font-size: 11px;
+}
+
+#nav-flex .right .sing-up {
+  border-radius: 8px;
+  color: #fff;
+  padding: 14px 24px 16px;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: #000;
+  border: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#nav-flex .right .sing-up:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+#nav-flex .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+#nav-flex .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 190px;
+  border: solid 3px #000;
+  z-index: 1;
+  left: -22px;
+  padding: 16px;
+}
+
+#nav-flex .dropdown .dropdown-content a {
+  color: #000;
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#nav-flex .dropdown .dropdown-content a:hover {
+  opacity: 0.5;
+}
+
+#nav-flex .dropdown .dropdown-content a:hover {
+  opacity: 0.5;
+}
+
+#nav-flex .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#hero {
+  padding: 130px 32px;
+}
+
+#hero .main-t {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#hero .main-t h1 {
+  font-size: 110px;
+  font-weight: 500;
+  text-align: center;
+  width: 800px;
+  line-height: 1;
+}
+
+#hero .p-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px auto;
+}
+
+#hero .p-hero p {
+  font-size: 22px;
+  font-weight: 300;
+  max-width: 500px;
+  text-align: center;
+}
+
+#hero .buttons-hero {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#hero .buttons-hero .btn-watch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#hero .buttons-hero .btn-watch button {
+  color: #000;
+  padding: 14px 24px 16px;
+  font-weight: 600;
+  font-size: 22px;
+  background-color: #fff;
+  border: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+#hero .buttons-hero .btn-watch img {
+  width: 18px;
+  height: 18;
+  position: relative;
+  left: 18px;
+}
+
+#main-one .img-under-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#main-one .img-under-hero img {
+  position: relative;
+  max-width: 1204px;
+  margin: 0 auto;
+  padding: 32px;
+  width: 100%;
+  height: 100%;
+}
+
+#main-one .icons-main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (77px)[auto-fit];
+      grid-template-columns: repeat(auto-fit, 77px);
+  max-width: 1200px;
+  margin: 0 auto 32px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#main-one .icons-main img {
+  width: 48px;
+  height: auto;
+}
+
+#footer-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 48px;
+  grid-row-gap: 0px;
+}
+/*# sourceMappingURL=style.css.map */
