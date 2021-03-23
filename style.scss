@@ -50,6 +50,7 @@ $colorWhite: #fff;
 $colorYellow: #ffc700;
 $colorPurple: #c7b9ff;
 $colorGreen: #0fa958;
+$colorGray: #282828;
 
 $main-tittle: 110px;
 $h1: 64px;
@@ -81,18 +82,37 @@ a {
   transform: translateY(-2px);
 }
 
+//BUTTONS-WHITE-BG-BLACK-FONT
+.btn-two {
+  border-radius: $border-radius;
+  color: $colorBlack;
+  padding: 14px 24px 16px;
+  border: solid 3px $colorBlack;
+  font-weight: 600;
+  font-size: $buttons2;
+  background-color: $colorWhite;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.btn-two:hover {
+  transform: translateY(-2px);
+}
+
 // NAVBAR
 #nav-flex {
   display: flex;
   justify-content: space-between;
   padding: 1.2rem 3rem;
   align-items: center;
+  align-self: flex-start;
+
   .left {
     width: 37px;
   }
   .right {
     display: flex;
     align-items: center;
+
     div {
       button {
         border: none;
@@ -163,7 +183,6 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-
     h1 {
       font-size: $main-tittle;
       font-weight: 500;
@@ -229,17 +248,58 @@ a {
       height: 100%;
     }
   }
-
-  .icons-main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 77px);
-    max-width: 1200px;
-    margin: 0 auto 32px;
-    justify-content: space-evenly;
-    img {
-      width: 48px;
-      height: auto;
+  .flex-flex {
+    padding: 48px 24px 0 24px;
+    .icons-main {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 77px);
+      max-width: 1200px;
+      margin: 0 auto 32px;
+      justify-content: space-evenly;
+      gap: 10px;
+      img {
+        width: 54px;
+        height: auto;
+      }
     }
+  }
+
+  .btn-flex {
+    display: flex;
+    justify-content: center;
+    padding: 0 32px 30px 0;
+  }
+}
+
+#main-two {
+  display: grid;
+  grid-template-columns: 10fr 9fr 6fr;
+  gap: 48px 32px;
+  padding: 48px 32px;
+  margin: 0 auto;
+  max-width: 1272px;
+  height: auto;
+  color: $colorGray;
+  .main-two-1 {
+    grid-area: 1 / 1 / 2 / 2;
+
+    p {
+      font-size: $p1;
+    }
+    h2 {
+      font-size: $h1;
+      font-weight: 500;
+      line-height: 1;
+    }
+  }
+  .main-two-2 {
+    grid-area: 1 / 2 / 2 / 3;
+
+    img {
+    }
+  }
+  .main-two-3 {
+    grid-area: 1 / 3 / 2 / 4;
   }
 }
 
