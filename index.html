@@ -16,7 +16,7 @@
         <nav id="nav-flex">
             <img src="/images/logo-fi.png" alt="" class="left" />
             <nav class="right">
-                <div class="dropdown">
+                <div class="dropdown res-navbar">
                     <button class="dropbtn">
                         <a href="http://">Features <span>▼</span> </a>
                     </button>
@@ -25,7 +25,7 @@
                             href="">Collaboration</a><a href="">What's New</a><a href="">Downloads</a>
                     </div>
                 </div>
-                <div class="dropdown">
+                <div class="dropdown res-navbar">
                     <button class="dropbtn">
                         <a href="http://">Enterprise <span>▼</span> </a>
                     </button>
@@ -33,10 +33,10 @@
                         <a href="">Overview</a><a href="">Customers</a><a href="">Constact Sales</a>
                     </div>
                 </div>
-                <div>
+                <div class="res-navbar">
                     <button><a href="http://">Pricing</a></button>
                 </div>
-                <div class="dropdown">
+                <div class="dropdown res-navbar">
                     <button class="dropbtn">
                         <a href="http://">Community <span>▼</span> </a>
                     </button>
@@ -44,7 +44,7 @@
                         <a href="">Overview</a><a href="">Customers</a><a href="">Constact Sales</a>
                     </div>
                 </div>
-                <div class="dropdown">
+                <div class="dropdown res-navbar">
                     <button class="dropbtn">
                         <a href="http://">Company <span>▼</span> </a>
                     </button>
@@ -52,31 +52,24 @@
                         <a href="">Blog</a><a href="">Careers</a><a href="">Our Story</a><a href="">Help Center</a>
                     </div>
                 </div>
-                <div>
+                <div class="res-navbar">
                     <button><a href="http://">Log in</a></button>
                 </div>
-               
+                
                 <button class="sing-up">Sign up</button>
-        
+                <div class="burger">
+                    <svg viewBox="0 0 100 80" width="40" height="40">
+                        <rect width="80" height="10"></rect>
+                        <rect y="30" width="80" height="10"></rect>
+                        <rect y="60" width="80" height="10"></rect>
+                    </svg>
+                </div>
             </nav>
         </nav>
         <section id="hero">
             <div class="main-t">
-                <h1>
-                    <!-- <span
-            >Where
-            <div><img src="" alt="" /></div></span
-          ><span
-            >teams
-            <div><img src="" alt="" /></div></span
-          ><span
-            >design
-            <div><img src="" alt="" /></div>
-          </span>
-          <span
-            >together
-            <div><img src="" alt="" /></div>
-          </span> -->
+                <h1 class="h11">
+
 
                     Where teams design together
                 </h1>
@@ -88,12 +81,14 @@
                 </p>
             </div>
             <div class="buttons-hero">
-                <button class="btn-one">Try Figma for free</button>
+                <button class="btn-one btn-try">Try Figma for free</button>
                 <a href="https://vimeo.com/365881491">
                     <div class="btn-watch">
-                        <img src="./images/play-hero-btn.png" alt="" /><button>
+                        <img src="./images/play-hero-btn.png" alt="" />
+                        <button>
                             See how it works
                         </button>
+                    </div>
                 </a>
             </div>
             </div>
@@ -105,13 +100,14 @@
                 <img src="./images/under-hero-img.png" alt="">
             </div>
             <div class='flex-flex'>
-                <div class="icons-main"><img src="./images/slack.svg" alt="" class="div1"><img src="./images/twitter.svg" alt="" class="div2"><img
-                        src="./images/github.svg" alt="" class="div3"><img src="./images/dropbox.svg" alt="" class="div4"><img
-                        src="./images/adobe.svg" alt="" class="div5"><img src="./images/newyorktimes.svg" alt="" class="div6"></div>
+                <div class="icons-main"><img src="./images/slack.svg" alt="" class="div1"><img
+                        src="./images/twitter.svg" alt="" class="div2"><img src="./images/github.svg" alt=""
+                        class="div3"><img src="./images/dropbox.svg" alt="" class="div4"><img src="./images/adobe.svg"
+                        alt="" class="div5"><img src="./images/newyorktimes.svg" alt="" class="div6"></div>
             </div>
             <div class="btn-flex">
-            <button class="btn-two">Meet our customers</button>
-        </div>
+                <button class="btn-two">Meet our customers</button>
+            </div>
         </section>
         <section id="main-two">
             <div class="main-two-1">
@@ -125,25 +121,31 @@
                 </p>
                 <button class="btn-two">Explore features</button>
             </div>
+            
             <div class="main-two-2">
-                <img src="./images/middle-1.png" alt="" /><img src="./images/middle-2.png" alt="" /><img src="./images/middle-3.png" alt="" />
+                <img src="./images/middle-1.png" alt="" class="main-tow-img-1"/><img src="./images/middle-2.png" alt="" class="main-tow-img-2"/><img
+                    src="./images/middle-3.png" alt="" />
             </div>
             <div class="main-two-3">
-                <img src="./images/right-1.png" alt="" /><img src="./images/right-2.png" alt="" /><img src="./images/right-3.png" alt="" />
+                <img src="./images/right-1.png" alt="" /><img src="./images/right-2.png" alt="" /><img
+                    src="./images/right-3.png" alt="" />
             </div>
+
         </section>
-        <section>
-            <div><img src="" alt="" /></div>
-            <div>
+        <section id="bg-black">
+            <div class="black-quote">
+            <div><img src="./images/Frame_1.jpg" alt="" /></div>
+            <div class="text-black">
                 <h2>
                     “Figma is fast. Files are always up to date. It’s easy to share
                     designs across the organization, so collaboration is easy.”
                 </h2>
                 <p>Bryan Haggerty, Sr. Design Manager at Twitter</p>
             </div>
+        </div>
         </section>
-        <section>
-            <div>
+        <section id="main-almost-footer">
+            <div class="almost-one">
                 <p>Design Systems</p>
                 <h2>Build once, reuse infinite times</h2>
                 <p>
@@ -152,14 +154,15 @@
                     speaking the same language, everyone’s more empowered to do their
                     best work.
                 </p>
-                <button>Build systems</button>
+                <button class="btn-two">Build systems</button>
             </div>
-            <div>
-                <img src="" alt="" />
+            <div class="almost-two">
+                <img src="./images/one-big-right.png" alt="" />
             </div>
         </section>
-        <section>
-            <div>
+        <section id="bg-green">
+            <div class="green-quote">
+            <div class="text-green">
                 <h2>
                     “With Figma, we can basically deploy a new build of our design
                     system to every designer at the company with two clicks of a
@@ -167,23 +170,66 @@
                 </h2>
                 <p>Lily Nguyen, Design Engineer at Uber</p>
             </div>
-            <div><img src="" alt="" /></div>
+            <div class="img-green"><img src="./images/Lily.jpg" alt="" /></div>
+        </div>
         </section>
     </main>
-    <footer>
-        <section>
-            <h2>Try Figma for free.</h2>
-            <form action=""></form>
-        </section>
-        <section>
-            <div id="footer-grid">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-        </section>
+    <footer id="footer">
+        <div class="flex-foot up-foot">
+            <a href="" class="BIG">Figma</a>
+            <a href="" class="text-none"> <img src='./images/instagram.svg' /> <p>Instagram</p></a>
+            <a href="" class="text-none"> <img src="./images/facebook.svg" alt=""><p>Facebook</p></a>
+            <a href="" class="text-none"> <img src="./images/twitter.svg" alt=""><p>Twitter</p></a>
+            <a href="" class="text-none"> <img src="./images/cookies.png" alt=""><p>Manage Cookies</p></a>
+        </div>
+        <div class="flex-foot">
+            <h6>Use Cases</h6>
+            <a href="">UI Design</a>
+            <a href="">UX Design</a>
+            <a href="">Prototyping</a>
+            <a href="">Graphic Design</a>
+            <a href="">Wireframing</a>
+            <a href="">Brainstorming</a>
+            <a href="">Templates</a>
+            <a href="">Remote Design</a>
+        </div>
+        <div class="flex-foot">
+            <h6>Explore</h6>
+            <a href="">Design Features</a>
+            <a href="">Prototyping Features</a>
+            <a href="">Collaboration Features</a>
+            <a href="">Design Systems Features</a>
+            <a href="">Pricing</a>
+            <a href="">Figma Organization</a>
+            <a href="">Students and Educators</a>
+            <a href="">Customers</a>
+            <a href="">Security</a>
+            <a href="">Integrations</a>
+            <a href="">Contact</a>
+        </div>
+        <div class="flex-foot">
+            <h6>Resources</h6>
+            <a href="">Blog</a>
+            <a href="">Best Practices</a>
+            <a href="">Support</a>
+            <a href="">Developers</a>
+            <a href="">Learn design</a>
+            <a href="">Downloads</a>
+            <a href="">Releases</a>
+            <a href="">Careers</a>
+            <a href="">About us</a>
+            <a href="">Agency Partners</a>
+            <a href="">Privacy</a>
+            <a href="">Status</a>
+        </div>
+        <div class="flex-foot">
+            <h6>Compare</h6>
+            <a href="">Sketch</a>
+            <a href="">Adobe XD</a>
+            <a href="">Invision Studio</a>
+            <a href="">Framer</a>
+            <a href="">Design on Windows</a>
+        </div>
     </footer>
 </body>
 
